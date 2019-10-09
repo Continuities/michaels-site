@@ -1,0 +1,43 @@
+
+/** Phones **/
+.block {
+  padding: 0 10%;
+  background: var(--background-sm) center center no-repeat;
+  background-size: cover;
+  min-height: 400px;
+}
+
+.blockList { 
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  font-size: 3rem;
+  text-align: center;
+  font-weight: lighter;
+}
+
+/** Tablets **/
+@media (min-width: 768px) {
+  .block {
+    padding: 0 10%;
+    background: var(--background-md) center center no-repeat;
+  }
+}
+
+/** Desktop **/
+@media (min-width: 992px) {
+  .block {
+    padding: 0 10%;
+    background: var(--background-lg) center center no-repeat;
+  }
+}
+
+/** Wide desktop **/
+@media (min-width: 1200px) {
+  .block {
+    padding: 0 10%;
+    background: var(--background-xl) center center no-repeat;
+  }
+}

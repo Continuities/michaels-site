@@ -1,0 +1,20 @@
+{
+  "short_name": "Michael's site",
+  "name": "Michael's awesome site",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/public/icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/public/icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff"
+}
