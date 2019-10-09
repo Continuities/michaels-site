@@ -7,6 +7,14 @@
   min-height: 400px;
 }
 
+.blocksize-normal {
+  min-height: 400px;
+}
+
+.blocksize-compact {
+  min-height: 200px;
+}
+
 .blockList { 
   display: flex;
   flex-direction: column;

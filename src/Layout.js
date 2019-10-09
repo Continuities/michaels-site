@@ -8,11 +8,13 @@
 
 import type { Node } from 'react';
 import React from 'react';
+import classnames from 'classnames';
 import style from './Layout.css';
 
 type BlockProps = {|
   children?: Node,
-  background?: string | Array<string>
+  background?: string | Array<string>,
+  size?: 'compact' | 'normal'
 |};
 const blockBackgroundStyle = (background?: string | Array<string>) => {
   if (!background) {
@@ -29,9 +31,9 @@ const blockBackgroundStyle = (background?: string | Array<string>) => {
     '--background-xl': `url(${sizeList[3]})`
   };
 };
-export const Block = ({ children, background }:BlockProps) => (
+export const Block = ({ children, background, size = 'normal' }:BlockProps) => (
   <section 
-    className={style.block} 
+    className={classnames(style.block, style[`blocksize-${size}`])} 
     style={blockBackgroundStyle(background)}
   >
     { children }
