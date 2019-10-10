@@ -14,7 +14,7 @@ import style from './Layout.css';
 type BlockProps = {|
   children?: Node,
   background?: string | Array<string>,
-  size?: 'compact' | 'normal'
+  size?: 'compact' | 'normal' | 'full'
 |};
 const blockBackgroundStyle = (background?: string | Array<string>) => {
   if (!background) {
@@ -38,12 +38,6 @@ export const Block = ({ children, background, size = 'normal' }:BlockProps) => (
   >
     { children }
   </section>
-);
-
-export const BlockList = ({ children }: {| children?: Array<Node> |}) => (
-  <div className={style.blockList}>
-    { children }
-  </div>
 );
 
 type HeaderProps = {|

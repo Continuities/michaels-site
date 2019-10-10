@@ -1,0 +1,49 @@
+.container {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  background-color: inherit;
+}
+
+.container.selectActive {
+  overflow: hidden;
+}
+
+.item {
+  z-index: 1;
+  transition: all 300ms;
+  background-color: inherit;
+}
+
+.selectActive > .item:not(.selected) {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.selected {
+  transform: translate3d(-90%, 0, 0);
+}
+
+.content {
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: opacity 300ms;
+  transition-delay: 200ms;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.shown {
+  opacity: 1;
+  pointer-events: all;
+}

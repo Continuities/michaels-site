@@ -15,15 +15,17 @@
   min-height: 200px;
 }
 
-.blockList { 
-  display: flex;
-  flex-direction: column;
+.blocksize-full {
+  min-height: 90%;
 }
 
 .header {
   font-size: 3rem;
   text-align: center;
   font-weight: lighter;
+  margin: 0;
+  height: 200px;
+  line-height: 200px;
 }
 
 /** Tablets **/
